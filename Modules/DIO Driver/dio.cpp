@@ -39,7 +39,8 @@ void DIO<AddrType, RegType, addr, pin>::toggle(void) {
 template<typename AddrType, typename RegType, const AddrType addr,
          const RegType pin>
 bool DIO<AddrType, RegType, addr, pin>::readInputValue(void) {
-    return mcal::reg::RegStaticAccess<AddrType, RegType, addr, pin>::bitGet();
+    return mcal::reg::RegStaticAccess<AddrType, RegType, addr - 2,
+                                      pin>::bitGet();
 }
 
 template<typename AddrType, typename RegType, const AddrType addr,
