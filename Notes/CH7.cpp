@@ -44,7 +44,7 @@ struct RegStaticAccess final {
     static void regAnd(void) {
         *reinterpret_cast<volatile RegType*>(addr) &= val;
     }
-    template<const register_value_type mask_value>
+    template<const RegType mask_value>
     static void reg_msk() {
         *reinterpret_cast<volatile register_value_type*>(address) =
             register_value_type(
