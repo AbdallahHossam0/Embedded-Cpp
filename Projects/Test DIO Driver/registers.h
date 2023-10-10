@@ -1,7 +1,7 @@
 #ifndef _REGISTERS_H_
 #define _REGISTERS_H_
 
-#include "cstdint.h"
+#include <cstdint>
 
 // > for AVR ATmega32
 
@@ -76,14 +76,14 @@ namespace mcal {
 
         // # Bit Position Values
         // Bit-position values.
-        constexpr std::uint8_t bit0 = UINT8_C(1U);
-        constexpr std::uint8_t bit1 = UINT8_C(1U << 1U);
-        constexpr std::uint8_t bit2 = UINT8_C(1U << 2U);
-        constexpr std::uint8_t bit3 = UINT8_C(1U << 3U);
-        constexpr std::uint8_t bit4 = UINT8_C(1U << 4U);
-        constexpr std::uint8_t bit5 = UINT8_C(1U << 5U);
-        constexpr std::uint8_t bit6 = UINT8_C(1U << 6U);
-        constexpr std::uint8_t bit7 = UINT8_C(1U << 7U);
+        constexpr std::uint8_t bitPos0 = UINT8_C(1U << 0U);
+        constexpr std::uint8_t bitPos1 = UINT8_C(1U << 1U);
+        constexpr std::uint8_t bitPos2 = UINT8_C(1U << 2U);
+        constexpr std::uint8_t bitPos3 = UINT8_C(1U << 3U);
+        constexpr std::uint8_t bitPos4 = UINT8_C(1U << 4U);
+        constexpr std::uint8_t bitPos5 = UINT8_C(1U << 5U);
+        constexpr std::uint8_t bitPos6 = UINT8_C(1U << 6U);
+        constexpr std::uint8_t bitPos7 = UINT8_C(1U << 7U);
     }  // namespace reg
 }  // namespace mcal
 
